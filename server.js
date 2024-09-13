@@ -24,9 +24,13 @@ const budget = {
     ]
 };
 
-
+app.get('/',express.static('public'))
 app.get('/budget', (req, res) => {
     res.json(budget);
+});
+
+app.get('/hello', (req, res) => {
+    res.send('Hello world!');
 });
 
 app.listen(port, () => {
