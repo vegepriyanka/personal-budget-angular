@@ -129,11 +129,16 @@
                 datasets: [
                     {
                         data: [],
-                        backgroundColor: [
-                            '#ffcd56',
+                        backgroundColor: ['#ffcd56',
                             '#ff6384',
                             '#36a2eb',
                             '#fd6b19',
+                            '#ba68c8',
+                            '#81c784',
+                            '#64b5f6',
+                            '#ffb74d',
+                            '#4bc0c0',
+                            '#9966ff'
                         ]
                     }
                 ],
@@ -153,9 +158,9 @@
             .then(function (res) {
                 for (var i = 0; i < res.data.myBudget.length; i++) {
                     dataSource.datasets[0].data[i] = res.data.myBudget[i].budget;
-                    dataSource.labels[i] = res.data.myBudget[i].title;
-                    createChart();
+                    dataSource.labels[i] = res.data.myBudget[i].title;   
                 }
+                createChart();
             });
         }
 

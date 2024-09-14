@@ -1,0 +1,44 @@
+{
+    "myBudget": [
+        {
+            "title": "Eat out",
+            "budget": 25
+        },
+        {
+            "title": "Rent",
+            "budget": 275
+        },
+        {
+            "title": "Grocery",
+            "budget": 110
+        },
+        {
+            "title": "Power bill",
+            "budget": 130
+        },
+        {
+            "title": "Gas",
+            "budget": 50
+        },
+        {
+            "title": "Entertainment",
+            "budget": 70
+        },
+        {
+            "title": "WiFi",
+            "budget": 30
+        },
+        {
+            "title": "Accessories",
+            "budget" : 100
+        },
+        {
+            "title": "Telephone bill",
+            "budget": 35
+        },
+        {
+            "title": "Medical Expenses",
+            "budget": 200
+        }
+    ]
+}
