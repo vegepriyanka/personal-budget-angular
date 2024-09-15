@@ -4,7 +4,7 @@ const express = require('express');
 const cors = require('cors');
 const app = express();
 const port = 3000;
-
+const path = require("path");
 app.use(cors());
 
 // const budget = {
@@ -25,8 +25,8 @@ app.use(cors());
 // };
 const myBudgetData = require(__dirname+'/myBudget.json');
 
-
-app.get('/',express.static('public'))
+app.use(express.static(path.join(__dirname, "public")));
+//app.get('/',express.static('public'))
 
 // app.get('/budget', (req, res) => {
 //     res.json(budget);
